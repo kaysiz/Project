@@ -352,17 +352,21 @@ body {
   font-size: 18px;
   line-height: 1.72222;
   color: #34495e;
-  background-color: #ffffff;
-}
+  background-color: #e6e6f0;
+  background-image: url("/static/images/background.png");
+  -moz-background-size: cover;
+  background-size: cover;
+
 a {
-  color: #16a085;
+  color: #3687c9;
   text-decoration: none;
   -webkit-transition: .25s;
           transition: .25s;
+   padding-left: 20px;       
 }
 a:hover,
 a:focus {
-  color: #1abc9c;
+  color: #7b2ca8;
   text-decoration: none;
 }
 a:focus {
@@ -402,7 +406,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 1.1;
   color: inherit;
 }
@@ -425,6 +429,7 @@ h2,
 h3 {
   margin-top: 30px;
   margin-bottom: 15px;
+  padding-left: 10px
 }
 h4,
 h5,
@@ -437,30 +442,32 @@ h6 {
 }
 h1,
 .h1 {
-  font-size: 61px;
+  font-size: 30px;
+  padding-left: 10px;
 }
 h2,
 .h2 {
-  font-size: 53px;
+  font-size: 25px;
 }
 h3,
 .h3 {
-  font-size: 40px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 h4,
 .h4 {
-  font-size: 29px;
+  font-size: 15px;
 }
 h5,
 .h5 {
-  font-size: 28px;
+  font-size: 10px;
 }
 h6,
 .h6 {
-  font-size: 24px;
+  font-size: 5px;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.72222;
   margin: 0 0 15px;
 }

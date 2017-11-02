@@ -173,7 +173,7 @@ class ContentCreateUpdateView(TemplateResponseMixin, View):
 			obj.save()
 			if not id:
 				# if new content
-				Content.object.create(module=self.module, item=obj)
+				Content.objects.create(module=self.module, item=obj)
 				return redirect('module_content_list', self.module.id)
 		return self.render_to_response({'form': form, 'object':self.obj})	
 

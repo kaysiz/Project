@@ -1156,7 +1156,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 input,
 button,
@@ -1169,9 +1169,11 @@ textarea {
 a {
   color: #171747;
   text-decoration: none;
+  padding-left: 10px;
 }
 a:hover,
 a:focus {
+  padding-left: 5px;
 }
 figure {
   margin: 0;
@@ -1249,11 +1251,10 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 100;
   line-height: 1.1;
-  color: #171747;
-}
-h1 small,
+  color: #f51de3;
+  padding-left: 10px
 h2 small,
 h3 small,
 h4 small,
