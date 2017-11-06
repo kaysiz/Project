@@ -9,9 +9,18 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+.logo {
+ height : 50%;
+  width: 10%;
+  padding-top: 10px;
+  padding-left: 5px;
+}
 body {
   margin: 0;
   color: #333333;
+  background-image: url("/static/images/background3.png");
+  background-size: cover;
+  -moz-background-size: cover;
 }
 footer {
   padding: 140px 0 40px;

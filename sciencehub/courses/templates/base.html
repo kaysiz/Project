@@ -5,16 +5,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width", initial-scale="1.0">
 <title>{% block title %}Science Hub{% endblock %}</title>
-<link href="{% static "css/demo.css" %}" rel="stylesheet">
+<!--<link href="{% static "css/demo.css" %}" rel="stylesheet">-->
 <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
-<link href="{% static "css/flat-ui.css" %}" rel="stylesheet">
+<!--<link href="{% static "css/flat-ui.css" %}" rel="stylesheet">-->
 </head>
 <body>
 <div id="header">
-<img src="{% static 'images/logo.png' %}">
+<img class = "logo" src="{% static 'images/background2.png' %}">
 <ul class="menu">
 {% if request.user.is_authenticated %}
-
+{%for course in object_list%}
+<li> {{course.title}} </li>
+{% endfor %}
 {% else %}
 <div class="sign_in_up">
 <li><a href="{% url "login" %}">Sign in</a></li>
