@@ -36,7 +36,7 @@ class CourseListView(TemplateResponseMixin, View):
 	modules in each. If slug is supplied we get corresponding subject.
 	Query limited to courses belonging to certain subject'''
 	model = Course
-	template_name = 'courses/course/list.html'
+	template_name = 'courses/course/homepage.html'
 
 	def get(self, request, subject=None):
 		subjects = Subject.objects.annotate(total_courses=Count('courses'))

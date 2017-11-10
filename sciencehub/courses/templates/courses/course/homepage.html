@@ -1,0 +1,32 @@
+<!Doctype html>
+{% load staticfiles %}
+
+<html>
+    <Head>
+        {% block title %}<title>The Science Hub </title> {% endblock %}
+        <link href="{% static "css/homepage.css" %}" rel="stylesheet">
+    </Head>
+
+    <body>
+        <p class = "welly"> Welcome</p>
+        <hr class=" hrule"/>
+            <div class = "body_text">
+              Welcome to <strong>The Science Hub </strong>. This is a site that helps leaners to revise for their ZIMSEC examinations. 
+              In this site we offer very short and concise notes pertaining to different subjects in Ordinary and Advanced level Subjects. The courses we offer include
+              Physics, Mathematics and ICT. You can register<a href="{% url "login" %}"> here.</a>
+            </div>
+
+            <div class = "form">
+                <form action="{% url 'login' %}" method="post">
+                {{ form.as_p }}
+                {% csrf_token %}
+                Username: <input type="text" name="username" value="Enter your username" /> <br />
+                <br />
+                Password: <input type="text" name="Password" value="Password" />
+                <p><input type="submit" value="Log-in"></p>
+                </form></div>
+            <hr />
+           <footer class = "footer" > A project by Tapiwa Konga, Tinotenda Mhisi and Mduduzi Dube. </footer> 
+    </body>
+
+</html>

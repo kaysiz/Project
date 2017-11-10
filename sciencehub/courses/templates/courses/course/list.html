@@ -22,14 +22,15 @@ Instructor: {{ course.owner.get_full_name }}
 {% endfor %}
 </div>
 
+<hr />
 <div class="science_hub_row">
-<h1 class="demo-section-title">
+<h2 class="demo-section-title">
 {% if subject %}
 {{ subject.title }} courses
 {% else %}
 All courses
 {% endif %}
-</h1>
+</h2>
 
 <h3 class="demo-panel-title">Subjects</h3>
 <ul class ="unstyled" id="modules">

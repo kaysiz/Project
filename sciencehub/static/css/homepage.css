@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    color: #333333;
+    background-image: url("/static/images/background3.png");
+    background-size: cover;
+    -moz-background-size: cover;}
+
+ html {
+     font-family: "arial", "Times New Roman", Georgia, Serif;
+     font-size: 20px;
+ }   
+
+ .welly {
+     color: brown;
+     
+ }
+
+ .body_text{
+     color: rgb(226, 17, 115);
+     position: relative;
+     padding-left: 25%;
+     padding-right: 25%
+
+ }
+
+ .footer{
+     color: blueviolet;
+     font-size: 10px;
+ }
+
+ .form{
+     position: relative;
+     padding-left: 10px;
+
+ }
