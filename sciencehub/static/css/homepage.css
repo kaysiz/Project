@@ -19,17 +19,61 @@ body {
      color: rgb(226, 17, 115);
      position: relative;
      padding-left: 25%;
-     padding-right: 25%
+     padding-right: 25%;
 
  }
 
  .footer{
      color: blueviolet;
      font-size: 10px;
+     padding-left: 30%;
+     padding-right: 30%;
  }
 
  .form{
      position: relative;
      padding-left: 10px;
+     padding-right: 75%;
+     padding-top: 0%;
+     border: 2px solid black;
+     
+}
 
+ #img_container {
+    width:100%;
+    border: 3px solid red;
+    
+  }
+
+ #physics {
+    width:200px;
+    float:left;
+    padding-left: 30px;
+    border: 2px solid red;
+  }
+
+ #ICT {
+    width:200px;
+    float:left;
+    padding-left: 150px;
+    border: 3px solid rgb(214, 7, 7)
+  }
+
+ #mathematics {
+    width:300px;
+    float:right;
+    padding-left: 30px;
+    border: 2px solid red;
+  }
+
+  .img_physics {
+        padding: 10px;
+  }
+
+ .img_ICT {
+    padding: 10px;
+  }
+
+ .img_mathematics {
+    padding: 30px;
  }

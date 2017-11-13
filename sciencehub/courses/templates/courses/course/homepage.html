@@ -17,16 +17,29 @@
             </div>
 
             <div class = "form">
+                <br />
+                Sign in
+                <br />
                 <form action="{% url 'login' %}" method="post">
                 {{ form.as_p }}
                 {% csrf_token %}
-                Username: <input type="text" name="username" value="Enter your username" /> <br />
                 <br />
-                Password: <input type="text" name="Password" value="Password" />
+                Username: <input type="text" name="username" placeholder="Enter your username" /> <br />
+                <br />
+                Password: <input type="password" name="Password" placeholder="Password" />
+                <br />
                 <p><input type="submit" value="Log-in"></p>
-                </form></div>
-            <hr />
-           <footer class = "footer" > A project by Tapiwa Konga, Tinotenda Mhisi and Mduduzi Dube. </footer> 
-    </body>
+                </form>
+            </div>
+            <div id="img_container">
+                <div id = "physics"><img class = "img_physics" src = "/static/images/physics.png" /></div> 
+                <div id = "ICT"><img class = "img_ICT" src = "/static/images/ICT.png" /></div> 
+                <div id = "mathematics"><img class = "img_mathematics" src = "/static/images/mathematics.png" /></div>
+
+            </div>
+                 
+        </body>
+        <hr />
+        <div><footer class = "footer" > &copy A project by Tapiwa Konga, Tinotenda Mhishi and Mduduzi Dube. </footer></div> 
 
 </html>
