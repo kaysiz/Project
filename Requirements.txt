@@ -1,0 +1,13 @@
+These are the requirements for the project.
+
+1. Django 
+2. pip install django-braces
+3. pip install django-embed
+
+Admin credentials
+ username: admin
+ password: adminSci3nc3Hub
+
+Sample student login
+ username: KennethLove
+ password: DryJok3r
